@@ -1,8 +1,9 @@
 swagger: '2.0'
 securityDefinitions:
-  a:
-    type: oauth
-    authorizationUrl: javascript:alert(document.domain)//
+  oauth2PasswordSecurity:
+    type: oauth2
+    flow: password
+    tokenUrl: 'https://examples.com/V2/user/{user_id}/oauth/token'
 info:
   version: "0.0.1"
   title: Example Title
