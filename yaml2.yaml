@@ -1,36 +1,31 @@
 swagger: '2.0'
-securityDefinitions:
-  oauth2PasswordSecurity:
-    type: oauth2
-    flow: password
-    tokenUrl: 'https://examples.com/V2/user/{user_id}/oauth/token'
+
 info:
   version: "0.0.1"
   title: Example Title
   description: Please Authorize! <img src=x onerror=alert(1) />
-  
-components:
-  securitySchemes:
-    oAuthSample:    # <---- arbitrary name
-      type: oauth2
-      description: This API uses OAuth 2 with the implicit grant flow. [More info](https://api.example.com/docs/auth)
-      flows:
-        implicit:   # <---- OAuth flow(authorizationCode, implicit, password or clientCredentials)
-          authorizationUrl: https://api.example.com/oauth2/authorize
-          scopes:
-            read_pets: read your pets
-            write_pets: modify pets in your account
-# Step 2 - apply security globally...
-security: 
-  - oAuthSample: 
-    - write_pets
-    - read_pets
-# ... or to individual operations
+
+
 paths:
-  /pets:
-    patch:
-      summary: Add a new pet
-      security: 
-        - oAuthSample: 
-          - write_pets
-          - read_pets
+  /:
+    get:
+      responses:
+        200:
+          description: Successful respons
+
+securityDefinitions:
+  BasicAuth:
+    type: basic
+  ApiKeyAuth:
+    type: apiKey
+    in: header
+    name: X-API-Key
+  OAuth2:
+    type: oauth2
+    flow: accessCode
+    authorizationUrl: https://example.com/oauth/authorize
+    tokenUrl: https://example.com/oauth/token
+    scopes:
+      read: Grants read access
+      write: Grants write access
+      admin: Grants read and write access to administrative information
