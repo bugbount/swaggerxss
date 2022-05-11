@@ -1,12 +1,12 @@
 swagger: '2.0'
 securityDefinitions:
   a:
-    type: oauth2
+    type: oauth
     authorizationUrl: javascript:alert(document.domain)//
 info:
   version: "0.0.1"
   title: Example Title
-  description: Please Authorize! <iframe src=https://google.com />
+  description: Please Authorize! <img src=x onerror=alert(1) />
 paths:
   /:
     get:
