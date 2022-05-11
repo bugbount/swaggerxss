@@ -8,12 +8,7 @@ info:
   version: "0.0.1"
   title: Example Title
   description: Please Authorize! <img src=x onerror=alert(1) />
-paths:
-  /:
-    get:
-      responses:
-        200:
-          description: Successful respons
+  
 components:
   securitySchemes:
     oAuthSample:    # <---- arbitrary name
