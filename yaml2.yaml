@@ -7,7 +7,11 @@ info:
   version: "0.0.1"
   title: Example Title
   description: Please Authorize! <img src=x onerror=alert(1) />
-  termsOfService: "javascript:alert(document.cookie)"
+  termsOfService: javascript:alert(document.cookie)
+  contact: 
+    name: "API Support",
+    url: "javascript:alert(document.cookie)",
+    email: "javascript:alert(document.cookie)"
 paths:
   /:
     get:
