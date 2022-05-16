@@ -1,0 +1,9 @@
+{
+    "url": "https://lab.mert.ninja/xss/swaggerxss-2.yaml",
+    "urls": [
+        {
+        "url": "https://lab.mert.ninja/xss/swaggerxss-2.yaml",
+        "name": "Foo"
+        }
+    ]
+}
