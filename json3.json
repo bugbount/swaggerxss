@@ -1,8 +1,8 @@
 {
-    "url": "https://lab.mert.ninja/xss/swaggerxss-2.yaml.php",
+    "url": "https://lab.mert.ninja/swagger.yaml.php",
     "urls": [
         {
-        "url": "https://lab.mert.ninja/xss/swaggerxss-2.yaml.php",
+        "url": "https://lab.mert.ninja/swagger.yaml.php",
         "name": "Foo"
         }
     ]
