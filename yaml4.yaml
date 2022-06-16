@@ -6,7 +6,7 @@ securityDefinitions:
 info:
   version: "0.0.1"
   title: Example Title
-  description: Please Authorize! <img src=https://mert.ninja/imgs/pp4.jpeg onerror=alert(1) />
+  description: html injection <img src=https://mert.ninja/imgs/pp4.jpeg onerror=alert(1) />
 paths:
   /:
     get:
