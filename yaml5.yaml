@@ -6,7 +6,7 @@ securityDefinitions:
 info:
   version: "0.0.1"
   title: Example Title
-  description: Please Authorize!123 <img src=x onerror=alert(1) /><b>aaa</b><if<iframe>rame src=x></iframe>
+  description: Please Authorize!1234 <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><style><a title="</style><img src='#' onerror='alert(1)'>">
 paths:
   /:
     get:
